@@ -1,0 +1,72 @@
+                                                                                       DAY-1
+*GUIDO VAN ROSSUM is a creator of python programming.
+*IDLE-Integrted development learning environment.
+*Django is a part of python.
+
+*Why python...?
+ANS:1.simple
+2.vast in built libraries
+3.robust
+4.dynamically tight
+5.Interpretor based
+*Python is famous in the market and its called as language of future.
+*Its support current and upcmng technologies.
+
+*MEDIUMS:
+1.IDLE
+2.jupyter notebook
+3.anaconda
+4.thony
+5.pycharm
+6.vs code
+
+*The white space in IDLE is "shell" and ">>>" is PROMPT.
+*C uses ASCII code (Has only english language).
+*python and java uses UNICODE (supports multiple languages).
+*Python programes are called as SCRIPTS.
+File names shoukd be programe based.
+*Variable should be appropriate [num1,n1,numbers].++
+
+*DATATYPES AND VARIABLE DECLARATION:
+1.Numeric
+>int
+>float
+>complex
+>boolean
+2.Sequence
+>list
+>string
+>tuple
+>dictionary
+3.Declaration:
+valid:_4*=100,n=4
+invalid:4*=100,y=100
+NULL data type
+
+*Python is a object oriented language.
+*Set is an exclusive datatype.
+
+*TYPE CONVERSION:
+bool(1)    bool(0(
+true       false 
+int(34.67)
+34
+
+*id() command gives the adress of a variable or a value
+id(56)
+1703850
+
+*isinstance() command gives true if the type given in the arguement matches the type of the value given
+isintance(54,int)
+true
+isinstance(16.86,complex)
+false
+
+*type({1,2,3})
+<class'set'>
+type({"a":1,"b":2})
+<class'dict')
+type((1,2,3))
+<class'tuple'>
+ 
+*OPERATOR PRECEDANCE AND ASSOCIATIVITY 
