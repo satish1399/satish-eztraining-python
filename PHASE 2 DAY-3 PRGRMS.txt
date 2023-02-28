@@ -1,0 +1,125 @@
+                                                                        DAY-3 PROGRAMS
+#while creating LL we gonna do it in acsending order:
+class Node:
+    def __init__(self,data):
+        self.data = data
+        self.next = None
+class LinkedList:
+    def __init__(self):
+        self.head  = None
+
+    def printList(self):
+        temp = self.head
+        if not temp:
+            print('List is empty.')
+            return
+        else:
+            print('Start:' , end=' ')
+        while temp:
+             print(temp.data,end=' -> ')
+            temp = temp.next
+        print('end.')
+    def insert(self,data):
+        new_node = Node(data)
+        if self.head = new_node
+        elif self.head.data >= new_node.data:
+            new_node.next = self.head
+            self.head = new_node
+        else:
+            current = self.head
+            while current.next and new_node.data
+                current = current.next
+            new_node.next = current.next
+            current.next = new_node
+    def delete(self,key):
+        if self.head is None:
+            print('Deletion Error:The list is empty')
+            return
+        if self.head.data == key:
+            self.head = self.head.next
+            return
+        current = self.head
+        while current:
+            if current.data == key:
+                break
+            previous = current
+            current = current.next
+        if current is None:
+            print('Deletion error:key not found.')
+        else:
+            previous.next = current.next
+if __name__==' __main__':
+    LL = LinkedList()
+    print(' ')
+    LL.insert(10)
+    LL.insert(12)
+    LL.insert(8)
+    LL.insert(11)
+    LL.insert(10)
+    
+      
+    LL.printlist()
+    LL.delete(12)
+    LL.delete(8)
+    LL.delete(10)
+    LL.printList()
+
+OUTPUT:
+Start: 8 -> 10 -> 12 -> 11 -> 10 -> end.
+Start: 11 -> 10 -> end.
+
+#USER DEFINED MODULES PROGRAM:
+#LETS say u hve lot of functions in ur project
+#then there will be a format
+#easy to read,especially for others
+#those who r seeing ur prgrme
+
+print("before function")
+def f1():
+    print("f1")
+def f2():
+    print("f2")
+def f3():
+    print("f3")
+if __name__== "__main__":
+    f1()
+    f2()
+    f3()
+print("name:",__name__)    
+
+OUTPUT:
+before function
+f1
+f2
+f3
+name: __main__
+
+#DOUBLE LINKED LIST:
+class Node:
+    def __init__(self,data):
+        self.data=data
+        self.previous=None
+        self.next=None
+class dll:
+    def __init__(self):
+        self.head=None
+    def display(self):
+        if self.head is None:
+            print("Empty")
+        else:
+            temp=self.head
+            while temp:
+                print(temp.data,"<-->",end=" ")
+                temp=temp.next
+l=dll()
+n1=Node(100)
+l.head=n1
+n2=Node(200)
+n2.prev=n1
+n1.next=n2
+l.display()
+
+OUTPUT:
+100 <--> 200 <--> 
+                
+
